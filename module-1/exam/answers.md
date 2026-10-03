@@ -1,27 +1,140 @@
-1. Input, processing and Output
-2. Monitor, CPU, Keyboard and software examples are Windows, Microsoft Office
-3. CPU core is the physical processing unit. It is what like how much task can be done in a specific task and one core has two thread. A thread is a sequence of instructions that a CPU core can execute.
-4. Because it losses it's memort as the power lost.
-5. HDD is slow and it uses magnetic disk. It has moving mechanical parts and SDD is fast and expensive. It uses NAND flash memory. It has no moving parts.
-6. OS manages hardware, files and software/applications.
-7. Program is a set of instructions and process is the execution of a program.
-8. compiled language means it first translate the language into machine language and then run the file but in interpreted language, it interpret it during runtime.
-9. js is text-based. So, it can be read line-by-line by Github but .png is a binary file so it has no meanings by reading it line-by-line.
-10. file extension helps OS and applications that what type of file it is and which program should open it.
+# Module 1 — Answers
 
-11. The internet is the connection of all the computers. The web is the thing which runs on the top of the internet to access anything.
-12. Client sends HTTP requests to the server. Server processes it and then Server provides the HTTP response with the message of status Code and content.
-13. DNS translate a domain name into an IP address.
-14. GET to request for some content
-POST to create anything like username
-PUT replace entire resource
-PATCH edit the resource
-DELETE delete the resource completely
+## Computer Fundamentals
 
-15. HTTP is stateless because each request is independent. It doesn't remember previous requests.
+### 1. Name the three-stage cycle every computer performs.
 
-16. HTTPS is used to encrypt and protect communication between client and server
-17. API is the mean between two software to communicate without needing to know about their internal functionalities.
-18. GET posts/15 and DELETE posts/15/comments/9
-19. {"name":	"Ali",	"age":	25}
-20. query parameters are status and limit and valuess are pending and 10 respectively.
+**Answer:**  
+Input, processing, and output.
+
+---
+
+### 2. Give one example each of hardware and software on your own machine.
+
+**Answer:**  
+Examples of hardware are a monitor, CPU, and keyboard.  
+Examples of software are Windows and Microsoft Office.
+
+---
+
+### 3. What's the difference between a CPU core and a thread?
+
+**Answer:**  
+A CPU core is a physical processing unit inside the CPU that can execute instructions. A thread is a sequence of instructions that a CPU core can execute. Some CPU cores can handle two or more threads at the same time.
+
+---
+
+### 4. Why is RAM described as "volatile"?
+
+**Answer:**  
+RAM is described as volatile because it loses its stored data when the power is turned off.
+
+---
+
+### 5. Name two differences between an HDD and an SSD.
+
+**Answer:**  
+An HDD is slower and uses magnetic disks. It has moving mechanical parts.  
+An SSD is faster and uses NAND flash memory. It has no moving parts and is usually more expensive than an HDD.
+
+---
+
+### 6. List three responsibilities of an operating system.
+
+**Answer:**  
+An operating system manages hardware, manages files and storage, and manages software/applications and running processes.
+
+---
+
+### 7. What's the difference between a program and a process?
+
+**Answer:**  
+A program is a set of instructions, while a process is the execution of a program.
+
+---
+
+### 8. What's the difference between a compiled and an interpreted language?
+
+**Answer:**  
+A compiled language is translated into machine code before the program runs. In an interpreted language, the code is interpreted during runtime.
+
+---
+
+### 9. Why can Git track line-by-line changes in a `.js` file but not in a `.png` file?
+
+**Answer:**  
+A `.js` file is text-based, so Git can read and compare it line by line. A `.png` file is a binary file, so its data does not have meaningful lines of text to compare.
+
+---
+
+### 10. Why does a file extension matter even though it doesn't change the file's actual content?
+
+**Answer:**  
+A file extension helps the operating system and applications identify what type of file it is and which program should open it.
+
+---
+
+## Web Basics
+
+### 11. Explain the difference between "the internet" and "the web" in your own words.
+
+**Answer:**  
+The internet is a global network that connects computers and other devices. The web is a service that runs on top of the internet and allows us to access websites and web pages.
+
+---
+
+### 12. Draw (on paper) the client-server request/response cycle for loading a web page.
+
+**Answer:**  
+The client sends an HTTP request to the server. The server processes the request and sends back an HTTP response containing a status code and usually the requested content.
+
+---
+
+### 13. What does DNS do, and why is it necessary?
+
+**Answer:**  
+DNS translates a domain name into an IP address. It is necessary because humans can remember names like `github.com` more easily than numerical IP addresses.
+
+---
+
+### 14. Name the 5 HTTP methods and one use-case for each.
+
+**Answer:**  
+
+- **GET** — requests or retrieves content.
+- **POST** — creates new data, such as creating a new user.
+- **PUT** — replaces an entire existing resource.
+- **PATCH** — updates part of an existing resource.
+- **DELETE** — deletes a resource completely.
+
+---
+
+### 15. Explain why HTTP is described as "stateless," and how cookies/sessions address that.
+
+**Answer:**  
+HTTP is stateless because each request is independent and HTTP does not automatically remember previous requests. Cookies and sessions can store or identify information so the server can recognize a user between different requests.
+
+---
+
+### 16. What does HTTPS add on top of HTTP?
+
+**Answer:**  
+HTTPS uses TLS to encrypt and protect communication between the client and server.
+
+---
+
+### 17. What is an API, and why don't frontend and backend just share one program directly?
+
+**Answer:**  
+An API is a way for two software components to communicate without needing to know about each other's internal functionality. It allows the frontend and backend to communicate while remaining separate parts of an application.
+
+---
+
+### 18. Convert this into a REST-style endpoint: "get all comments on post 15" and "delete comment 9 on post 15."
+
+**Answer:**  
+
+**Get all comments on post 15:**
+
+```text
+GET /posts/15/comments
