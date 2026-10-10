@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms1</title>
+</head>
+
+<body>
+    <form>
+        <label for="user-name">Name</label>
+        <input type="text" required id="user-name" name="user-name" minlength="3" maxlength="20">
+
+        <label for="email">Email</label>
+        <input type="email" required id="email" name="email">
+
+        <label for="password">Password</label>
+        <input type="password" required id="password" name="password" pattern=".{8,}">
+
+        <label for="country">Country</label>
+        <select id="country" name="country">
+            <option value="">-- Country --</option>
+            <option value="pk">Pakistan</option>
+            <option value="ind">India</option>
+        </select>
+
+        <input type="checkbox" required id="terms-agreement">
+        <label for="terms-agreement">I agree to terms</label>
+
+        <main>
+            <h1>Learn HTML</h1>
+            <p>HTML structures the content of web pages.</p>
+
+            <aside>
+                <h2>Related Lessons</h2>
+                <ul>
+                    <li>CSS basics</li>
+                    <li>JavaScript basics</li>
+                    <li>HTML forms</li>
+                </ul>
+            </aside>
+        </main>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+
+</html>

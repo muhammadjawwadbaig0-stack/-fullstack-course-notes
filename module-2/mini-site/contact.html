@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact page of a demo Mini-site">
+    <title>Contact Mini-site</title>
+</head>
+
+<body>
+    <header>
+        <h1>Mini Site</h1>
+        <nav aria-label="Main">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="projects.html">Projects</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Get in Touch</h2>
+            <form action="/submit-contact" method="post">
+                <label for="c-name">Name</label>
+                <input type="text" id="c-name" name="name" required>
+
+                <label for="c-email">Email</label>
+                <input type="email" id="c-email" name="email" required>
+
+                <label for="c-message">Message</label>
+                <textarea rows="4" required name="message" id="c-message"></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+    
+
+    <footer>
+        <p>&copy; 2026 Mini Site.</p>
+    </footer>
+</body>
+
+</html>
