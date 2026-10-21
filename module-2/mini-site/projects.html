@@ -4,14 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
     <meta name="description" content="These are author's projects, he has worked on.">
     <title>Projects Mini-site</title>
 </head>
 
 <body>
-    <header>
+    <header class="container">
         <h1>Mini Site</h1>
-        <nav>
+        <nav >
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
             <a href="contact.html">Contact</a>
@@ -22,19 +23,28 @@
     <main>
         <h2>Author's Projects</h2>
         <section>
-            <article class="card">
-                <img src="images/headphones.jpg" alt="Wireless	headphones	on	a	wooden	desk" width="300">
-                <h3>Wireless Headphones</h3>
+            <article class="card card--featured">
+                <img src="images/headphones.jpg" class="card__image" alt="Wireless	headphones	on	a	wooden	desk" width="300">
+                <h3 class="card__title">Wireless Headphones</h3>
                 <p>Noise-cancelling, 30-hour battery life</p>
                 <p><strong>$79.99</strong></p>
                 <button type="button">Add to Cart</button>
             </article>
 
             <article class="card">
-                <img src="images/mouse.jpg" alt="Wireless mouse	on	a	wooden	desk" width="300">
-                <h3>Wireless mouse</h3>
+                <img src="images/mouse.jpg" class="card__image" alt="Wireless mouse	on	a	wooden	desk" width="300">
+                <h3 class="card__title">Wireless mouse</h3>
                 <p>Ergonomic design, rechargeable battery</p>
                 <p><strong>$29.99</strong></p>
+                <button type="button">Add to Cart</button>
+            </article>
+
+            <article class="card">
+                <span class="card__badge">POPULAR</span>
+                <img src="images/bluetooth-speakers.jpg" class="card__image" alt="bluetooth speaker on a wooden desk" width="300">
+                <h3 class="card__title">Bluetooth Speaker</h3>
+                <p>A portable speaker for listening to music.</p>
+                <p><strong>$49.99</strong></p>
                 <button type="button">Add to Cart</button>
             </article>
         </section>

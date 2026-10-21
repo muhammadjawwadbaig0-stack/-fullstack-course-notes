@@ -1,0 +1,21 @@
+.page {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+    "header header"
+    "sidebar main"
+    "footer footer";
+    min-height: 100vh;
+}
+
+header { grid-area: header; }
+nav {grid-area: sidebar; }
+main {grid-area: main; }
+footer {grid-area: footer; }
+
+body { margin: 0; }
+header { background: #cfe8ff; padding: 1rem; }
+nav    { background: #ffe8cf; padding: 1rem; }
+main   { background: #e8ffcf; padding: 1rem; }
+footer { background: #f5cfff; padding: 1rem; }

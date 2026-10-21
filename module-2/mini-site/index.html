@@ -4,8 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
     <meta name="description" content="Home page of a demo mini-site built while learning semantic HTML.">
-    <title>Home- Mini Site</title>
+    <title>Home – Mini Site</title>
 </head>
 
 <body>
@@ -20,15 +24,47 @@
     </header>
 
     <main>
-        <article>
-            <h2>Welcome</h2>
-            <p>This is a small three-page site built to practice <strong>linking multiple HTML documents</strong>
-                together using relative
-                paths.</p>
-        </article>
+        <div class="layout">
+            <aside class="sidebar">
+                <h2>Home</h2>
+                <p>PUBLIC</p>
+                <ul>
+                    <li>New Projects</li>
+                    <li>Magic Build</li>
+                    <li>All Projects</li>
+                    <li>Upload New</li>
+                    <li>Setting</li>
+                </ul>
+            </aside>
+
+            <article class="content">
+                <h2>Welcome</h2>
+                <p>This is a small three-page site built to practice <strong>linking multiple HTML documents</strong>
+                    together using relative paths.</p>
+            </article>
+        </div>
+
+        <div class="scroll-box" tabindex="0" role="region" aria-label="Sample article text">
+            <p>A week ago a friend invited a couple of other couples over for dinner. Eventually, the food (but not
+                the wine) was cleared off the table for what turned out to be some fierce Scrabbling. Heeding the
+                strategy of going for the shorter, more valuable word over the longer cheaper word, our final play was
+                “Bon,” which–as luck would have it!–happens to be a Japanese Buddhist festival, and not, as I had
+                originally asserted while laying the tiles on the board, one half of a chocolate-covered cherry treat.
+                Anyway, the strategy worked. My team only lost by 53 points instead of 58.</p>
+
+            <p>Just the day before, our host had written of the challenges of writing short. In journalism–my
+                friend’s chosen trade, and mostly my own, too–Mark Twain’s observation undoubtedly applies: “I didn’t
+                have time to write a short letter, so I wrote a long one instead.” The principle holds across genres,
+                in letters, reporting, and other writing. It’s harder to be concise than to blather. (Full disclosure,
+                this blog post will clock in at a blather-esque 803 words.) Good writing is boiled down, not baked
+                full of air like a soufflé. No matter how yummy soufflés may be. Which they are. Yummy like a Grisham
+                novel.</p>
+        </div>
     </main>
 
-    <footer>&copy; 2026 Mini Site.</footer>
+    <footer>
+        <p>&copy; 2026 Mini Site.</p>
+    </footer>
 </body>
 
 </html>

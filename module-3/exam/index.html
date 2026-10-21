@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Tallybook is simple invoicing software for freelancers. Send invoices, track payments and get paid on time.">
+    <title>Tallybook – Invoicing for freelancers</title>
+</head>
+
+<body>
+    <!-- 1. Sticky header: logo + nav -->
+    <header class="site-header">
+        <a href="#top" class="logo">Tallybook</a>
+        <nav aria-label="Main">
+            <a href="#features">Features</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- 2. Hero -->
+        <section id="top" class="hero">
+            <div class="hero__content">
+                <h1 class="hero__title">Send an invoice in under a minute</h1>
+                <p class="hero__text">Tallybook helps freelancers create invoices, track who has paid and send
+                    reminders, all in one place.</p>
+                <a href="#pricing" class="btn">See pricing</a>
+            </div>
+        </section>
+
+        <!-- 3. Features -->
+        <section id="features" class="section">
+            <h2 class="section__title">What you can do</h2>
+            <div class="features__grid">
+                <article class="feature">
+                    <h3 class="feature__title">Quick invoices</h3>
+                    <p>Pick a client, add your items and send. Your details are filled in for you.</p>
+                </article>
+                <article class="feature">
+                    <h3 class="feature__title">Payment tracking</h3>
+                    <p>See which invoices are paid, pending or overdue at a glance.</p>
+                </article>
+                <article class="feature">
+                    <h3 class="feature__title">Automatic reminders</h3>
+                    <p>Late clients get a polite nudge, so you don't have to chase them.</p>
+                </article>
+                <article class="feature">
+                    <h3 class="feature__title">Multiple currencies</h3>
+                    <p>Bill clients abroad in their own currency and see totals in yours.</p>
+                </article>
+                <article class="feature">
+                    <h3 class="feature__title">Expense records</h3>
+                    <p>Keep receipts next to the invoices they relate to.</p>
+                </article>
+                <article class="feature">
+                    <h3 class="feature__title">Yearly reports</h3>
+                    <p>Download a summary of income and expenses for tax time.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- 4. Pricing -->
+        <section id="pricing" class="section section--surface">
+            <h2 class="section__title">Pricing</h2>
+            <div class="pricing__list">
+                <article class="pricing-card">
+                    <h3 class="pricing-card__name">Starter</h3>
+                    <p class="pricing-card__price">$0<span> / month</span></p>
+                    <ul class="pricing-card__features">
+                        <li>3 invoices per month</li>
+                        <li>1 currency</li>
+                        <li>Email support</li>
+                    </ul>
+                    <a href="#contact" class="btn">Start free</a>
+                </article>
+
+                <article class="pricing-card pricing-card--featured">
+                    <p class="pricing-card__badge">Most chosen</p>
+                    <h3 class="pricing-card__name">Pro</h3>
+                    <p class="pricing-card__price">$12<span> / month</span></p>
+                    <ul class="pricing-card__features">
+                        <li>Unlimited invoices</li>
+                        <li>All currencies</li>
+                        <li>Automatic reminders</li>
+                        <li>Yearly reports</li>
+                    </ul>
+                    <a href="#contact" class="btn btn--light">Choose Pro</a>
+                </article>
+
+                <article class="pricing-card">
+                    <h3 class="pricing-card__name">Team</h3>
+                    <p class="pricing-card__price">$29<span> / month</span></p>
+                    <ul class="pricing-card__features">
+                        <li>Everything in Pro</li>
+                        <li>Up to 5 people</li>
+                        <li>Shared client list</li>
+                    </ul>
+                    <a href="#contact" class="btn">Choose Team</a>
+                </article>
+            </div>
+        </section>
+
+        <!-- 5. Contact form -->
+        <section id="contact" class="section">
+            <h2 class="section__title">Contact us</h2>
+            <form class="form" action="#" method="post">
+                <div class="form__row">
+                    <div class="form__field">
+                        <label for="c-name" class="required">Name</label>
+                        <input type="text" id="c-name" name="name" autocomplete="name" required>
+                    </div>
+                    <div class="form__field">
+                        <label for="c-email" class="required">Email</label>
+                        <input type="email" id="c-email" name="email" autocomplete="email" required>
+                    </div>
+                </div>
+
+                <div class="form__field">
+                    <label for="c-company">Company (optional)</label>
+                    <input type="text" id="c-company" name="company" autocomplete="organization">
+                </div>
+
+                <div class="form__field">
+                    <label for="c-message" class="required">Message</label>
+                    <textarea id="c-message" name="message" rows="5" required></textarea>
+                </div>
+
+                <button type="submit" class="btn">Send message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Tallybook. A fictional product made for practice.</p>
+    </footer>
+</body>
+
+</html>
